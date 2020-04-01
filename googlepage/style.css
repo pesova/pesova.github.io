@@ -1,0 +1,178 @@
+ body {
+     margin: 0;
+ }
+ 
+ main {
+     padding: 23px 25px 23px 25px;
+ }
+ 
+ p {
+     margin-top: 12px;
+ }
+ 
+ .navbar {
+     display: flex;
+     justify-content: flex-end;
+     padding: 0px 5px;
+ }
+ 
+ .nav-item {
+     margin-left: 20px;
+     color: #272727;
+     cursor: pointer;
+     text-decoration: none;
+ }
+ 
+ .nav-item:hover {
+     text-decoration: underline;
+ }
+ 
+ .navbar .nav-icon {
+     height: 20px;
+     width: 20px;
+     margin-top: 1px;
+     cursor: pointer;
+ }
+ 
+ .logo {
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     align-items: center;
+     margin-top: 100px;
+ }
+ 
+ .google-logo {
+     height: 92px;
+     width: 272px;
+ }
+ 
+ .search {
+     position: relative;
+ }
+ 
+ .search .search-bar {
+     width: 550px;
+     position: relative;
+     margin-top: 25px;
+     padding: 15px;
+     border-radius: 500px;
+     outline: none;
+     border: 1px solid #dedede;
+ }
+ 
+ .search .search-bar:hover {
+     position: relative;
+     box-shadow: 2px 0px 8px 0 #dedede;
+ }
+ 
+ .search .search-mic {
+     position: absolute;
+     width: 15px;
+     line-height: 50px;
+     display: block;
+     text-align: center;
+     bottom: 12px;
+     right: 20px;
+     cursor: pointer;
+ }
+ 
+ .search .search-icon {
+     position: absolute;
+     width: 18px;
+     line-height: 50px;
+     display: block;
+     text-align: center;
+     bottom: 12px;
+     left: 20px;
+     cursor: pointer;
+ }
+ 
+ .button-signIn {
+     background-color: rgba(0, 140, 255, 0.979);
+     padding: 7px 12px;
+     border-radius: 3px;
+     border: none;
+     font-weight: bold;
+     margin-left: 21px;
+     margin-top: -4px;
+     cursor: pointer;
+ }
+ 
+ .logo .button {
+     margin-top: 40px;
+ }
+ 
+ .logo .button .link {
+     padding: 10px 15px;
+     background-color: #f2f2f2;
+     border-radius: 3px;
+     margin-left: 10px;
+     font-size: 14px;
+ }
+ 
+ .logo .button a {
+     color: #585858;
+     text-decoration: none;
+ }
+ 
+ .logo .button a:hover {
+     color: black;
+ }
+ 
+ .logo p {
+     margin-top: 40px;
+     font-size: 15px;
+ }
+ 
+ .logo p a {
+     margin-left: 10px;
+     color: #1F11BE;
+     text-decoration: none;
+ }
+ 
+ .logo p a:hover {
+     text-decoration: underline;
+ }
+ 
+ footer {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     border: 1px solid #e4e4e4;
+     width: 100%;
+     background-color: #f2f2f2;
+ }
+ 
+ footer .country {
+     margin: 10px 30px;
+     color: #585858;
+ }
+ 
+ footer hr {
+     border: 1px solid #e4e4e4;
+ }
+ 
+ footer .footer-item {
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     margin: 10px 30px;
+ }
+ 
+ footer .footer-item a {
+     color: #585858;
+     text-decoration: none;
+     margin-right: 20px;
+     font-size: 14px;
+ }
+ 
+ footer .footer-item a:hover {
+     text-decoration: underline;
+ }
+ /* footer .footer-item .right{
+    justify-content: flex-end;
+} */
+ /* footer .footer-item .left{
+    justify-content: flex-start;
+} */
