@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.MainContainer {
+    background-color: rgb(189, 190, 178);
+    padding: 1px 70px;
+    min-height: 100vh;
+}
+
+.MainContainer .question {
+    padding: 20px;
+    background-color: #535455;
+    border-radius: 8px;
+    color: white;
+    font-size: 25px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.MainContainer .options {
+    float: left;
+    width: 100%;
+}
+
+.MainContainer .options ul {
+    padding: 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.MainContainer .options ul li {
+    display: grid;
+    background-color: #535455;
+    width: 60%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+.MainContainer .options ul li.correct {
+    background-color: #0fd40f;
+    box-shadow: 0px 3px 0px #03a503;
+}
+
+.MainContainer .options ul li.wrong {
+    background-color: #e91e1e;
+    box-shadow: 0px 3px 0px #cb0b0b;
+}
+
+.MainContainer .counter {
+    text-align: center;
+    width: 100%;
+}
+
+.MainContainer .next {
+    width: 40%;
+    text-align: center;
+    padding: 350px 0 0 0px;
+}
+
+.MainContainer .next button {
+    padding: 10px 70px;
+    color: white;
+    background-color: #5d5d5e;
+    border: 5px yellow;
+    border-radius: 8px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px #dfec29;
+    outline: none;
+    float: left;
+}
+
+h3 {
+    font-size: 35px;
+    width: 40%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter #score {
+    width: 20%;
+    float: right;
+    margin: 9px;
+}
+
+#score {
+    line-height: 40px;
+    background-color: grey;
+    padding: 5px 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.reset {
+    width: 40%;
+    bottom: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.reset a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.reset button {
+    padding: 15px 80px;
+    color: white;
+    background-color: #505050;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px #d8ec29;
+    outline: none;
+    float: left;
+}
+
+.reset button:active {
+    box-shadow: 0px 3px 0px transparent;
+}

@@ -13,7 +13,7 @@
     .main {
         background-color: #062863;
         background-size: cover;
-        background-image: url("o.png"), url("jgreen.png"), url("j.png"), url(l.png);
+        background-image: url("https://res.cloudinary.com/pesova/image/upload/v1585964794/o_goeop8.png"), url("https://res.cloudinary.com/pesova/image/upload/v1585964794/jgreen_higtym.png"), url("https://res.cloudinary.com/pesova/image/upload/v1585964794/j_iou8i7.png"), url(https://res.cloudinary.com/pesova/image/upload/v1585964794/l_mpsjyb.png);
         background-size: 15%, 15%, 15%, 15%;
         background-position: left -1% top -15%, right -7.5% top -1%, left -5% bottom -10%, right -5% bottom -5%;
         background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
