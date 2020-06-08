@@ -1,0 +1,193 @@
+body {
+    background-color: #cfcdcd;
+    font-family: arial;
+    margin: 0;
+}
+
+.Image-container-Home {
+    background-image: url("Tech/pictures/image2 (4).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
+.Image-container-Home a {
+    display: inline-block;
+    color: yellow;
+    font: 22px bolder;
+}
+
+.Image-container-Tech {
+    background-image: url("Tech/pictures/PCbots.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
+.Image-container-Tech a {
+    font-size: 21px;
+    font-weight: bolder;
+    position: relative;
+    color: yellow;
+    top: 20px;
+}
+
+.Image-container2 {
+    background-image: url("pictures/virus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
+.Image-container a {
+    font-size: 21px;
+    font-weight: bolder;
+    position: relative;
+    color: yellow;
+    top: 20px;
+}
+
+.Image-container2 a {
+    font-size: 21px;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+}
+
+.article-container {
+    width: 85%;
+    background-color: rgb(238, 235, 235);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#articleT {
+    overflow: hidden;
+    max-height: 40px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#articleT.open {
+    max-height: 3000px;
+    /* set Transition*/
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.article-Topic {
+    font-size: 30px;
+    font: bolder;
+}
+
+nav {
+    display: inline-flex;
+}
+
+a {
+    text-decoration: none;
+    padding: 3px;
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+article {
+    margin: 3px;
+    padding: 10px;
+}
+
+.main-container {
+    background-color: rgb(10, 9, 9);
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery-container a :hover {
+    opacity: 1.1;
+}
+
+.gallery-container a div {
+    width: 230px;
+    height: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.gallery1 {
+    background-image: url("Tech/pictures/image2 (2).jpg");
+}
+
+.gallery2 {
+    background-image: url("Tech/pictures/image2 (8).jpg");
+}
+
+.gallery3 {
+    background-image: url("Tech/pictures/image2 (1).jpg");
+}
+
+.gallery4 {
+    background-image: url("Tech/pictures/image2 (3).jpg");
+}
+
+.gallery5 {
+    background-image: url("Tech/pictures/image2 (7).jpg");
+}
+
+.gallery6 {
+    background-image: url("Tech/pictures/virus.jpg");
+}
+
+h1 {
+    font-size: 30px;
+}
+
+#btn {
+    background-color: #cfcdcd;
+    border: 2px solid yellow;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 110px;
+    font-size: 17px;
+}
+
+#btn:hover {
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 425px) {
+    .Image-container {
+        height: 200px;
+        width: 100%;
+    }
+    .gallery-container a div {
+        width: 130px;
+        height: 180px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .Image-container-Home a {
+        display: inline-block;
+        color: yellow;
+        font: 19px bolder;
+    }
+}
