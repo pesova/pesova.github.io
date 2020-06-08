@@ -4,8 +4,16 @@ body {
     margin: 0;
 }
 
+.Image-container-windows {
+    background-image: url("pictures/image2 (2).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
 .Image-container {
-    background-image: url("pictures/image9.jpg");
+    background-image: url("pictures/PCbots.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
