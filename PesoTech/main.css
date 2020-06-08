@@ -165,6 +165,7 @@ h1 {
     border-bottom-right-radius: 20px;
     width: 110px;
     font-size: 17px;
+    outline: none;
 }
 
 #btn:hover {
